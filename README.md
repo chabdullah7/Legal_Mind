@@ -174,9 +174,8 @@ Metrics tracked:
 
 ---
 
-##  Author
-
-**CH Abdullah**
- *[contact.abdullah.ai@gmail.com](mailto:contact.abdullah.ai@gmail.com)*
- [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/)
+## Author
+Abdullah  
+- GitHub: [github.com/chabdullah7](https://github.com/chabdullah7)  
+- LinkedIn: [linkedin.com/in/ch-abdullah-b537951a](https://www.linkedin.com/in/ch-abdullah-b537951a)
 
