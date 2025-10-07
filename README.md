@@ -60,21 +60,6 @@ LegalMind AI is an advanced **Retrieval-Augmented Generation (RAG)** and **Legal
 | **Storage**          | Vector indexes & model checkpoints on Google Drive          |
 | **Environment**      | Google Colab (GPU recommended)                              |
 
----
-
-## Directory Overview
-
-```
-LegalMind/
-│
-├── lawbook_chunks.json          # Preprocessed law book text chunks
-├── judgments_chunks.json        # Extracted court judgments
-├── lawbook_store/               # FAISS index for law books
-├── judgment_store/              # FAISS index for judgments
-├── best_epoch18_model/          # Fine-tuned LegalBERT model
-├── LegalMind.json               # Dataset used for training verdict predictor
-└── app.py                       # Full RAG + Agent + Gradio pipeline
-```
 
 ---
 
