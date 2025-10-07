@@ -1,43 +1,32 @@
-Perfect ✅ You’ve basically built **LegalMind AI** — a full **end-to-end intelligent legal reasoning system** with:
+# LegalMind AI — Justice Meets Intelligence
 
-* **Law Book Retrieval (RAG)**
-* **Judgment Analysis & Summarization (LLM)**
-* **Legal Verdict Prediction (Fine-tuned LegalBERT)**
-* **Multi-tool Agent + Gradio UI**
-
-Here’s your **professional README.md** draft 👇
-
----
-
-# ⚖️ LegalMind AI — Justice Meets Intelligence
-
-### 📚 *An Intelligent Legal Reasoning System for Pakistani Law*
+### *An Intelligent Legal Reasoning System for Pakistani Law*
 
 LegalMind AI is an advanced **Retrieval-Augmented Generation (RAG)** and **LegalBERT-powered** platform that brings together **law book retrieval**, **judgment summarization**, and **verdict prediction** — enabling deep insights and reasoning in Pakistani criminal law.
 
 ---
 
-## 🚀 Features
+## Features
 
-### 1️⃣ Law Book Retrieval (RAG)
+###  Law Book Retrieval (RAG)
 
 * Digitizes and semantically indexes **CrPC 1898**, **PPC**, and **Qanun-e-Shahadat 1984**
 * Uses **InLegalBERT** embeddings for domain-specific legal semantics
 * Retrieves and explains relevant sections based on natural-language queries
 
-### 2️⃣ Judgment Summarization
+###  Judgment Summarization
 
 * Extracts judgments from High Court and Supreme Court archives
 * Identifies **case type**, **court**, **arguments**, **laws invoked**, and **final decision**
 * Generates structured, human-readable summaries using **GPT-based LLMs**
 
-### 3️⃣ Verdict Prediction
+###  Verdict Prediction
 
 * Trained **LegalBERT classifier** predicts likely verdicts (e.g., *Guilty*, *Dismissed*, *Granted*)
 * Takes structured case summaries and arguments as input
 * Supports end-to-end pipeline: `Raw Text → Structured Fields → Predicted Verdict`
 
-### 4️⃣ Multi-Agent Legal Assistant
+###  Multi-Agent Legal Assistant
 
 * Integrates all functionalities via **LangChain Agents** and **Tools**
 * Agents can:
@@ -47,19 +36,19 @@ LegalMind AI is an advanced **Retrieval-Augmented Generation (RAG)** and **Legal
   * Predict likely verdicts (`predict_verdict_from_text`)
 * Supports **memory-based conversations** using LangChain's `ConversationBufferMemory`
 
-### 5️⃣ Gradio Frontend
+###  Gradio Frontend
 
 * Interactive UI with 4 functional tabs:
 
-  * 🔮 *Predict Verdict*
-  * 📚 *Search Law Books*
-  * 📜 *Past Case Judgments*
-  * 💬 *Legal ChatBot*
+  *  *Predict Verdict*
+  *  *Search Law Books*
+  *  *Past Case Judgments*
+  *  *Legal ChatBot*
 * Built using **Gradio Blocks** for real-time interaction
 
 ---
 
-## 🧠 Core Architecture
+##  Core Architecture
 
 | Component            | Description                                                 |
 | -------------------- | ----------------------------------------------------------- |
@@ -73,7 +62,7 @@ LegalMind AI is an advanced **Retrieval-Augmented Generation (RAG)** and **Legal
 
 ---
 
-## 🧩 Directory Overview
+## Directory Overview
 
 ```
 LegalMind/
@@ -89,7 +78,7 @@ LegalMind/
 
 ---
 
-## 🧱 Installation
+## Installation
 
 ```bash
 !pip install langchain faiss-cpu transformers sentence-transformers pymupdf gradio
@@ -105,9 +94,9 @@ drive.mount('/content/drive')
 
 ---
 
-## ⚙️ Usage
+## Usage
 
-### 🔹 Step 1 — Index Law Books & Judgments
+### Step 1 — Index Law Books & Judgments
 
 ```python
 lawbook_chunks = load_and_split_law_books()
@@ -115,21 +104,21 @@ judgment_chunks = split_judgments_by_common_headers("/content/drive/MyDrive/Lega
 create_vectorstores(judgment_chunks, lawbook_chunks)
 ```
 
-### 🔹 Step 2 — Run RAG Pipeline
+### Step 2 — Run RAG Pipeline
 
 ```python
 response = main_chain_law.invoke("Explain Section 489-F of the Pakistan Penal Code.")
 print(response)
 ```
 
-### 🔹 Step 3 — Predict Verdict
+### Step 3 — Predict Verdict
 
 ```python
 case_text = "Petitioner was charged under Section 489-F for cheque dishonor..."
 run_pipeline(case_text)
 ```
 
-### 🔹 Step 4 — Launch Gradio App
+### Step 4 — Launch Gradio App
 
 ```python
 demo.launch(share=True)
@@ -137,7 +126,7 @@ demo.launch(share=True)
 
 ---
 
-## 🧪 Model Training
+## Model Training
 
 Fine-tuned **LegalBERT** for multi-class verdict classification:
 
@@ -156,7 +145,7 @@ Metrics tracked:
 
 ---
 
-## 📈 Results Snapshot
+## Results Snapshot
 
 | Metric                        | Value                                    |
 | ----------------------------- | ---------------------------------------- |
@@ -167,7 +156,7 @@ Metrics tracked:
 
 ---
 
-## 🤖 Agents Summary
+## Agents Summary
 
 | Tool                        | Function                                                  |
 | --------------------------- | --------------------------------------------------------- |
@@ -177,7 +166,7 @@ Metrics tracked:
 
 ---
 
-## 🧾 Example Query Flow
+## Example Query Flow
 
 **User:** “What does Section 489-F say about cheque dishonor?”
 **Agent:** Retrieves PPC section → Explains the punishment and ingredients of the offence.
@@ -190,23 +179,19 @@ Metrics tracked:
 
 ---
 
-## 🧠 Future Enhancements
+## Future Enhancements
 
-* 🏛️ Add Supreme Court case indexing
-* 📑 Support for PECA (Cybercrime Law) and NAB Ordinance
-* 💬 Integration with RAG-Fusion for multi-source reasoning
-* 🧍 Persona-based Legal Chat (Lawyer / Judge / Student modes)
-* 🔍 Retrieval performance benchmarking
+*  Add Supreme Court case indexing
+*  Support for PECA (Cybercrime Law) and NAB Ordinance
+*  Integration with RAG-Fusion for multi-source reasoning
+*  Persona-based Legal Chat (Lawyer / Judge / Student modes)
+*  Retrieval performance benchmarking
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **CH Abdullah**
-AI Researcher | LegalTech Innovator
-📧 *[contact.abdullah.ai@gmail.com](mailto:contact.abdullah.ai@gmail.com)*
-🌐 [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/)
+ *[contact.abdullah.ai@gmail.com](mailto:contact.abdullah.ai@gmail.com)*
+ [LinkedIn](https://linkedin.com/in/) | [GitHub](https://github.com/)
 
----
-
-Would you like me to make this README **Markdown file** (`README.md`) for direct download — or should I add your **LinkedIn + GitHub links** inside before exporting?
