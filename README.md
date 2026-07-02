@@ -175,7 +175,7 @@ Metrics tracked:
 ---
 
 ## Author
-Abdullah  
-- GitHub: [github.com/chabdullah7](https://github.com/chabdullah7)  
-- LinkedIn: [linkedin.com/in/ch-abdullah-b537951a](https://www.linkedin.com/in/ch-abdullah-b537951a)
+**Abdullah**  
+AI/ML Engineer  
+www.linkedin.com/in/chabdullah7
 
